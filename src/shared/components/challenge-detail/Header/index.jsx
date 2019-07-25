@@ -329,7 +329,7 @@ Unregister
                 </DangerButton>
               ) : (
                 <PrimaryButton
-                  disabled={registering || registrationEnded || isLegacyMM}
+                  disabled={false && (registering || registrationEnded || isLegacyMM)}
                   forceA
                   onClick={registerForChallenge}
                   theme={{ button: style.challengeAction }}
